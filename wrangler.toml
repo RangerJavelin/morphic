@@ -1,12 +1,13 @@
 name = "morphic"
-type = "javascript" # or "webpack" if using a bundler
-account_id = "3f26164df851b3218de5a3da200aa8f5"
-workers_dev = true
+type = "javascript"  # or "webpack" if using a bundler
+account_id = "3f26164df851b3218de5a3da200aa8f5"  # Replace with your actual account ID
+workers_dev = false  # Set to true if you want to test in Workers Dev
 compatibility_date = "2024-09-21"
-
-[env.production]
-workers_dev = false
 
 [build]
 command = "npm install && npm run build"  # Command to build your project
 pages_build_output_dir = "build"  # Replace with your actual output directory
+
+[env.production]
+workers_dev = false
+compatibility_date = "2024-09-21"
