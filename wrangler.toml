@@ -6,3 +6,7 @@ compatibility_date = "2024-09-21"
 
 [env.production]
 workers_dev = false
+
+[build]
+command = "npm install && npm run build"  # Command to build your project
+pages_build_output_dir = "build"  # Replace with your actual output directory
